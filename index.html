@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+    <title>Dicee</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- <p class="heading">Cant decide yet!</p> -->
+        <p id="winner1" class="heading"><img class="redFlag1" src="red_flag.png"> Player 1 wins!</p>
+        <p id="winner2" class="heading">Player 2 wins! <img class="redFlag2" src="red_flag.png"></p>
+        <p id="draw" class="heading"><img class="redFlag1" src="red_flag.png">It's a draw!<img class="redFlag2"
+                src="red_flag.png"></p>
+
+        <div class="player">
+            <p class="player1">Player 1</p>
+            <img id="firstDice" class="diceImg" src="dices\dice1.png" alt="">
+        </div>
+        <div class="player">
+            <p class="player2">Player 2</p>
+            <img id="secondDice" class="diceImg" src="dices\dice1.png" alt="">
+        </div>
+
+        <button class="rollBtn" onClick="window.location.reload();">New Roll!</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
